@@ -704,4 +704,161 @@ Wire Wire Line
 Connection ~ 10100 1950
 Wire Wire Line
 	10400 1300 10400 2450
+$Comp
+L 2020-04-29_01-15-33:NCP2809BDMR2G U?
+U 1 1 5EA931B5
+P 6350 4000
+F 0 "U?" H 7150 4387 60  0000 C CNN
+F 1 "NCP2809BDMR2G" H 7150 4281 60  0000 C CNN
+F 2 "MICRO10_3P10X3P10" H 7150 4240 60  0001 C CNN
+F 3 "" H 6350 4000 60  0000 C CNN
+	1    6350 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:LM358 U?
+U 1 1 5EA95C90
+P 2900 4050
+F 0 "U?" H 2900 4417 50  0000 C CNN
+F 1 "LM358" H 2900 4326 50  0000 C CNN
+F 2 "" H 2900 4050 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf" H 2900 4050 50  0001 C CNN
+	1    2900 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:LM358 U?
+U 2 1 5EA97770
+P 2100 5500
+F 0 "U?" H 2100 5867 50  0000 C CNN
+F 1 "LM358" H 2100 5776 50  0000 C CNN
+F 2 "" H 2100 5500 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf" H 2100 5500 50  0001 C CNN
+	2    2100 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:LM358 U?
+U 3 1 5EA99127
+P 2900 4050
+F 0 "U?" H 2858 4096 50  0000 L CNN
+F 1 "LM358" H 2858 4005 50  0000 L CNN
+F 2 "" H 2900 4050 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf" H 2900 4050 50  0001 C CNN
+	3    2900 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:AudioJack3_Switch J?
+U 1 1 5EAA9D44
+P 9200 4300
+F 0 "J?" H 8920 4208 50  0000 R CNN
+F 1 "AudioJack3_Switch" H 8920 4299 50  0000 R CNN
+F 2 "" H 9200 4300 50  0001 C CNN
+F 3 "~" H 9200 4300 50  0001 C CNN
+	1    9200 4300
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:AudioJack3_Switch J?
+U 1 1 5EAADB90
+P 4200 3450
+F 0 "J?" H 4182 3875 50  0000 C CNN
+F 1 "AudioJack3_Switch" H 4182 3784 50  0000 C CNN
+F 2 "" H 4200 3450 50  0001 C CNN
+F 3 "~" H 4200 3450 50  0001 C CNN
+	1    4200 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_POT_Dual_Separate RV?
+U 1 1 5EAB0816
+P 7150 3150
+F 0 "RV?" V 6943 3150 50  0000 C CNN
+F 1 "40k" V 7034 3150 50  0000 C CNN
+F 2 "" H 7150 3150 50  0001 C CNN
+F 3 "~" H 7150 3150 50  0001 C CNN
+	1    7150 3150
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_POT_Dual_Separate RV?
+U 2 1 5EAB3037
+P 7150 5300
+F 0 "RV?" V 7035 5300 50  0000 C CNN
+F 1 "40k" V 6944 5300 50  0000 C CNN
+F 2 "" H 7150 5300 50  0001 C CNN
+F 3 "~" H 7150 5300 50  0001 C CNN
+	2    7150 5300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7950 4100 8400 4100
+Wire Wire Line
+	9000 4000 8850 4000
+Wire Wire Line
+	8850 4000 8850 4100
+Connection ~ 8850 4100
+Wire Wire Line
+	8850 4100 9000 4100
+Wire Wire Line
+	7950 4200 8400 4200
+Wire Wire Line
+	8850 4200 8850 4300
+Wire Wire Line
+	8850 4300 9000 4300
+Wire Wire Line
+	9000 4200 8850 4200
+Connection ~ 8850 4200
+Wire Wire Line
+	7950 4000 8200 4000
+Wire Wire Line
+	8200 4000 8200 4300
+Wire Wire Line
+	8200 4500 8850 4500
+Wire Wire Line
+	9000 4400 8850 4400
+Wire Wire Line
+	8850 4400 8850 4500
+Connection ~ 8850 4500
+Wire Wire Line
+	8850 4500 9000 4500
+Wire Wire Line
+	7950 4300 8200 4300
+Connection ~ 8200 4300
+Wire Wire Line
+	8200 4300 8200 4500
+Wire Wire Line
+	8400 4100 8400 3350
+Wire Wire Line
+	8400 3350 7150 3350
+Wire Wire Line
+	7150 3350 7150 3300
+Connection ~ 8400 4100
+Wire Wire Line
+	8400 4100 8850 4100
+Wire Wire Line
+	8400 4200 8400 5100
+Wire Wire Line
+	8400 5100 7150 5100
+Wire Wire Line
+	7150 5100 7150 5150
+Connection ~ 8400 4200
+Wire Wire Line
+	8400 4200 8850 4200
+$Comp
+L power:GNDREF #PWR?
+U 1 1 5EADD5B8
+P 5850 4800
+F 0 "#PWR?" H 5850 4550 50  0001 C CNN
+F 1 "GNDREF" H 5855 4627 50  0000 C CNN
+F 2 "" H 5850 4800 50  0001 C CNN
+F 3 "" H 5850 4800 50  0001 C CNN
+	1    5850 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 4400 5850 4400
+Wire Wire Line
+	5850 4400 5850 4800
 $EndSCHEMATC
